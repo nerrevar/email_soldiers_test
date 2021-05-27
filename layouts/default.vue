@@ -1,5 +1,21 @@
 <template>
   <div>
+    <img
+      class="logo"
+      src="~/assets/logo.svg"
+      alt=""
+    />
+    <Advertisement
+      :item="{
+        title: 'Лучшие предложения от Miele',
+        text: 'Здесь вы найдете лучшие предложения от Miele, которые доступны на текущий момент. ' +
+          'Просто выберите нужную акцию, перейдите в нее и получите максимальную выгоду.',
+        button: {
+          text: 'Выбрать',
+          action: $router.push('/'),
+        },
+      }"
+    />
     <Nuxt />
   </div>
 </template>
